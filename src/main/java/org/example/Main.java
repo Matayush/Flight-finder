@@ -9,6 +9,7 @@ public class Main {
 
         MobilePhone mediumPhone = new MobilePhone("600g", 300);
         System.out.println(mediumPhone.weight + " " + mediumPhone.price);
+        oldPhone.displayValues();
         String parameters = mediumPhone.getParameters();
         System.out.println(parameters);
 
