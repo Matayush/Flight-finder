@@ -1,19 +1,39 @@
 package org.example;
 
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
-        // Press Alt+Enter with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        MobilePhone phone = new MobilePhone("200g", 700);
+        System.out.println(phone.weight + " " + phone.price);
+        MobilePhone oldPhone = new MobilePhone("4000g", 100);
+        System.out.println(oldPhone.weight);
 
-        // Press Shift+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
+        MobilePhone mediumPhone = new MobilePhone("600g", 300);
+        System.out.println(mediumPhone.weight + " " + mediumPhone.price);
+        oldPhone.displayValues();
+        String parameters = mediumPhone.getParameters();
+        System.out.println(parameters);
+        mediumPhone.displayPrice();
+        mediumPhone.loverPrice();
+        mediumPhone.raisePrice();
 
-            // Press Shift+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
-            System.out.println("i = " + i);
-        }
     }
+}
+class MobilePhone {
+    String weight;
+    int price;
+    public MobilePhone(String weight, int price){
+        this.weight = weight;
+        this.price = price;
+    }
+    public void displayValues (){
+        System.out.println(this.weight + " " + this.price);
+    }
+    public String getParameters(){
+        return this.weight + " " + this.price;
+    }
+    public void displayPrice () {System.out.println((this.price));}
+    public  void loverPrice () {System.out.println((this.price * 0.90));}
+    public void raisePrice () {
+        int amount = 300;
+        System.out.println(this.price + amount);}
 }
