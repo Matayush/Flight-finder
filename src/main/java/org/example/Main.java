@@ -15,6 +15,9 @@ public class Main {
         mediumPhone.displayPrice();
         mediumPhone.loverPrice();
         mediumPhone.raisePrice();
+        phone.checkPrice();
+        mediumPhone.checkPrice();
+        oldPhone.checkPrice();
 
     }
 }
@@ -36,4 +39,15 @@ class MobilePhone {
     public void raisePrice () {
         int amount = 300;
         System.out.println(this.price + amount);}
-}
+    public void checkPrice() {
+        if (this.price < 200) {
+            System.out.println("Price is very good");
+        } else if (this.price < 300 ) {
+            System.out.println("Price is good");
+        } else if (this.price <550) {
+            System.out.println("Price could be lower");
+        } else {
+            System.out.println("This phone is too expensive");
+        }
+    }
+    }
