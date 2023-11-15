@@ -18,7 +18,13 @@ public class Main {
         phone.checkPrice();
         mediumPhone.checkPrice();
         oldPhone.checkPrice();
+        int min = 0;
+        int max = 32;
+        phone.evenNumbers(min, max);
 
+    }
+
+    private static void evenNumbers(int min, int max) {
     }
 }
 class MobilePhone {
@@ -39,8 +45,7 @@ class MobilePhone {
     public void raisePrice () {
         int amount = 300;
         System.out.println(this.price + amount);}
-    public void checkPrice() {
-        if (this.price < 200) {
+    public void checkPrice() {        if (this.price < 200) {
             System.out.println("Price is very good");
         } else if (this.price < 300 ) {
             System.out.println("Price is good");
@@ -48,6 +53,13 @@ class MobilePhone {
             System.out.println("Price could be lower");
         } else {
             System.out.println("This phone is too expensive");
+        }
+    }
+    public void evenNumbers(int min, int max){
+        for (int i = min; i<max; i++) {
+            if (i%2 == 0) {
+                System.out.println(i);
+            }
         }
     }
     }
