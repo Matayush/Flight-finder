@@ -12,6 +12,9 @@ public class Main {
         oldPhone.displayValues();
         String parameters = mediumPhone.getParameters();
         System.out.println(parameters);
+        mediumPhone.displayPrice();
+        mediumPhone.loverPrice();
+        mediumPhone.raisePrice();
 
     }
 }
@@ -28,4 +31,9 @@ class MobilePhone {
     public String getParameters(){
         return this.weight + " " + this.price;
     }
+    public void displayPrice () {System.out.println((this.price));}
+    public  void loverPrice () {System.out.println((this.price * 0.90));}
+    public void raisePrice () {
+        int amount = 300;
+        System.out.println(this.price + amount);}
 }
