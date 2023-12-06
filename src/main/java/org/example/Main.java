@@ -10,6 +10,11 @@ public class Main {
         database.displayFlightsToCity("Warsaw");
         ArrayList<String> cities = database.getCities();
         System.out.println(cities);
+        Flight cheapestFlight = database.getCheapestFlight();
+        System.out.println("Cheapest flight is " + cheapestFlight.displayDestinationAndArrival());
+        ArrayList<Journey> journeys = database.getFlights("Paris", "Porto");
+        System.out.println(journeys);
+
     }
 
 }
