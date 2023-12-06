@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+ class_method_variable
+    <list default="true" id="779adf53-171a-494f-9771-ab1127439848" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/FlightDatabase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Flight_finder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Flight.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Num.java" beforeDir="false" />
+    </list>
+
     <list default="true" id="779adf53-171a-494f-9771-ab1127439848" name="Changes" comment="" />
+main
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
